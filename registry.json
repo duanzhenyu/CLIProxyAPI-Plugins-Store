@@ -928,9 +928,8 @@
     {
       "id": "cpa-codex-weight-balancer",
       "name": "Codex Weight Balancer",
-      "description": "Rewrites Codex credential weights from remaining weekly quota and time-to-reset, so weighted round-robin paces each account against its own reset deadline. Logarithmic bucketing with hysteresis keeps writes sparse, and session affinity is untouched.",
+      "description": "Rewrites Codex credential weights from remaining weekly quota and time-to-reset, so weighted round-robin paces each account against its own reset deadline. Logarithmic bucketing with hysteresis keeps writes sparse, and session affinity is untouched. An opt-in kickstart spends one minimal request to start an unused account's quota window.",
       "author": "duanzhenyu",
-      "version": "0.2.0",
       "repository": "https://github.com/duanzhenyu/cpa-codex-weight-balancer",
       "homepage": "https://github.com/duanzhenyu/cpa-codex-weight-balancer",
       "license": "MIT",
